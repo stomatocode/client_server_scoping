@@ -1,4 +1,6 @@
+
 get '/' do
+  @stuff="Super Awesome"
   erb :index
 end
 
@@ -7,6 +9,7 @@ get '/skills/:skill' do
 end
 
 get '/meals' do
+
   @meals = ["Spaghetti",
             "Ravioli",
             "Hummus and Veggies",
@@ -15,7 +18,6 @@ get '/meals' do
             "Sushi",
             "Linguini",
             "Onigilli"]
+
   erb :meals
 end
-
-
